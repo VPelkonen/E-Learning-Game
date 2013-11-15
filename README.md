@@ -1,6 +1,3 @@
-E-Learning-Game
-===============
+Uusi Otsikko
 
-A project outline for a learning game hosted online.
-
-Way cool, man!
+Täytyy laittaa uudet tiedot tänne ja miettiä tarkemmin projektin lopputulosta.
