@@ -1,3 +1,5 @@
+Paikannussovellus
+
 1. Johdanto
 
 Tämä on konsepti paloturvallisuuden testaukseen tarkoitettua paikkatietoa hyödyntävää sovellusta varten.
@@ -44,4 +46,4 @@ Sovelluksen on toimittava jatkuvasti eikä yhteys rakennuksen langattomaan paika
 Sovelluksen on kyettävä tuottamaan tarkkaa informaatiota laitteen kantajan sijainnista sisätiloissa.
 Sovelluksen yhdystietokannan ja -palvelimen on kyettävä käsittelemään tulevaa informaatiota ja tallentamaan se.
 Sovelluksen on hyvä olla intuitiivinen ja helppokäyttöinen, lähes näkymätön käyttäjälleen.
-Järjestelmä on oltava hallinnassa ylläpitäjälle
+Järjestelmä on oltava hallinnassa ylläpitäjälle.
