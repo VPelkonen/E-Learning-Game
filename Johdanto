@@ -41,9 +41,16 @@ Eli...
 
 
 3. Vaatimukset
-Sovellus ja palvelin vaativat
+Sovellus ja palvelin vaativat kirjautumisen käyttäjältä, jotta voidaan eritellä tarvittaessa käyttäjän mukaan.
 Sovelluksen on toimittava jatkuvasti eikä yhteys rakennuksen langattomaan paikallisverkkoon saa pätkiä.
 Sovelluksen on kyettävä tuottamaan tarkkaa informaatiota laitteen kantajan sijainnista sisätiloissa.
 Sovelluksen yhdystietokannan ja -palvelimen on kyettävä käsittelemään tulevaa informaatiota ja tallentamaan se.
 Sovelluksen on hyvä olla intuitiivinen ja helppokäyttöinen, lähes näkymätön käyttäjälleen.
 Järjestelmä on oltava hallinnassa ylläpitäjälle.
+
+Käyttöliittymä sovelluksella on minimalistinen.
+Itse sovellusnäkymä näyttää, josko yhteys on päällä, kuinka kauan se on ollut päällä ja kuinka paljon dataa on siirretty.
+Muutoin käyttäjälle yleensä vain näkyy pieni indikaattori laitteen lepotilassa, joka kertoo yhteyden tilan: ON/OFF.
+Sovellus ei vaadi käyttäjältä kuin kirjautumisen ja minimaalisen seuraamisen, joten kirjautumisikkuna on edellä-
+mainitun lisäksi ainoa tarvittava näkymä.
+
