@@ -1,0 +1,59 @@
+Koskelo-projekti
+(http://sovellusprojektit.it.jyu.fi/koskelo/dokumentit/vaatimusmaarittely10.pdf)
+
+1. Johdanto
+Koskelo on Jyväskylän yliopiston käyttöön tullut opintoryhmien ja kalenterien hallintajärjestelmäkäyttöliittymä.
+Muutos koskee jo olemassa olevaa Korppi-järjestelmää, joka on hajanainen ja fragmentoitunut.
+Dokumentti on tarkoitettu projektiin tutustumishaluisille henkilöille, asiakkaalle sekä tekijöille.
+Projekti on tuotettu loppuun.
+Dokumentti lienee luotu selventääkseen projektin tarkoitusta sekä tehdäkseen selkeäksi Koskelo-projektin sisältö.
+Rakenne on yksinkertaisuudellaan:
+  1. Johdanto
+  2. Termit
+  3. Sovelluksen taustoja ja tavoitteita
+  4. Toiminnalliset vaatimukset
+  5. Tekniset vaatimukset
+  6. Rajoitteet
+  7. Yhteenveto
+  8. Lähteet
+Johdatteleva rakenne paljastaa dokumentin kohderyhmäksi tavallisemman käyttäjän ja/tai asiasta tietämättömän asiakkaan.
+Termit on selitetty selkeästi ja kuvaavasti. Tarve selittää niitä ylipäätään kertoo selkeydenhakuisuudesta.
+
+
+2. Käyttötapaukset
+Koskelo-käyttöliittymällä voi suunnitella opintoaikatauluja, kurssitiloja, kalentereita sekä hallita käyttäjäkuntia.
+Käyttäjäkuntaan kuuluvat sekä opettajat, että oppilaat, vierailijat ja valvojat (sihteerit).
+Skenaariota tai käyttäjätarinoita ei ole erikseen eritelty, mutta käyttäjäryhmät ja niiden oikeudet on määritelty.
+
+3. Järjestelmän yleisrakenne
+Ainoatakaan kaaviota ei dokumentissa ole esitetty eikä yksityiskohtiin pureuduta syvemmin.
+Joitain havainnollistavia kuvailuja käyttöliittymästä ja sen toiminnasta on esitetty.
+
+4. Vaatimukset
+Vaatimukset ovat eritelty ja ne on aseteltu eri priorisaatioluokkiin projektin skaalan sisällä.
+Jotkut osat ovat erittäin tärkeitä ja toiset toissijaisia. Nämä on eritelty P1-P4 -merkein (pienempi on tärkeämpi).
+Toiminnallisiin vaatimuksiin kuuluu kaikki perusominaisuudet, kuten opintotilojen ja opintoryhmien hallinta.
+Esitys on selkeä ja protokollat eritelty. "Sivut on toteutettava JSP, Java-luokilla, JavaScriptillä ja AJAXilla."
+Lisäksi toiminta on rajattu teittyihin selaimiin (Internet Explorer ja Mozilla Firefox senaikaiset versiot).
+Vaatimukset ovat eritelty selkeästi ja hyvin, yksityiskohtiin pureutumatta, mutta toiminnallisuuden takaus vaaditaan.
+Lähinnä ristiriitoja asiakkaan kanssa voisi tulla yksityiskohdista, sijoittelusta ja sen sellaisesta.
+
+5. Miltä se näyttää
+Yhtään havainnollistavia kuvia ei ole. Käyttöliittymää ei ole eritelty kuin hiukan kalenterin ja käytön suhteen.
+Rajaukset ovat suurpiirteiset ja on erikseen mainittu, että projektin tarkoituksena on tuottaa useita prototyyppejä.
+
+6. Prosessimalli
+Todennäköisesti koska projekti on oppilasharjoitustyö, sen riskianalyysiä, budjettia tai muuta linjausta ei ole eritelty.
+Tyäryhmiä ei esitetä, rahoitusta ei mainita eikä aikataulusta ole tietoakaan.
+Dokumentti on vain yleiskuvaus siitä projektista, joka aiotaan toteuttaa todennäköisesti liukuvasti.
+
+7. Johtopäätökset
+Mielestäni dokumentti on varsin selkeä ja hyvä ensidokuemntti projektin pohjalle.
+Itse käyttöliittymää sillä ei kuitenkaan voi alkaa rakentamaan, vaan se vaatisi vielä selkeän suunnitelman.
+Toisaalta haetaan useita toimivia prototyyppejä, joista voitaisi kasata toimiva kokonaisratkaisu.
+Rajaukset ovat selkeät aikataulua ja budjettia lukuunottamatta, mutta valmiin tuotteen versiohistoria on näkyvillä.
+Dokumentti on enemmänkin yhteenveto ja yleinen vaatimusmäärittely, mutta pieni luova vapaus lienee ihan hyvästä.
+
+- Ville
+
+
