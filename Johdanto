@@ -1,10 +1,24 @@
 1. Johdanto
 
-Tämä on konsepti paloturvallisuuden testaukseen tarkoitettua paikkatietoa hyödyntävää sovellusta varten. Sovelluksen avulla voidaan testata reaaliympäristössä palohälytyksen sattuessa ihmisten liikkeitä rakennuksessa ja selvittää mahdolliset ongelmakohdat. Ongelmakohdilla tarkoitetaan paikkoja joissa rakennuksesta poistumiseen käytetään liialti aikaa ja onko jotain paikkoja, joissa hälytykseen ei mahdollisesti osata reagoida.
+Tämä on konsepti paloturvallisuuden testaukseen tarkoitettua paikkatietoa hyödyntävää sovellusta varten.
+Sovelluksen avulla voidaan testata reaaliympäristössä palohälytyksen sattuessa ihmisten liikkeitä rakennuksessa ja
+selvittää mahdolliset ongelmakohdat.
+Ongelmakohdilla tarkoitetaan paikkoja joissa rakennuksesta poistumiseen käytetään liialti aikaa ja onko jotain paikkoja,
+joissa hälytykseen ei mahdollisesti osata reagoida.
 
-Sovellus hyödyntää ihmisillä käytössä olevia mobiililaitteita ja niiden paikannusta WLAN verkon avulla. Järjestelmä vaatii toimiakseen kirjautuminen rakennuksen langattomaan verkkoon. Sovellus tallentaa eli "nauhoittaa" ihmisten liikkeet rakennuksessa ja tilannetta voidaan jälkeen päin toistaa halutusta kohdasta. Sovelluksen hallinta voi itsessään toimia applikaationa tai web-sovelluksena, johon kirjaudutaan tunnuksilla.
+Sovellus hyödyntää ihmisillä käytössä olevia mobiililaitteita ja niiden paikannusta WLAN verkon avulla.
+Järjestelmä vaatii toimiakseen kirjautuminen rakennuksen langattomaan verkkoon.
+Sovellus tallentaa eli "nauhoittaa" ihmisten liikkeet rakennuksessa ja tilannetta voidaan jälkeen päin toistaa
+halutusta kohdasta.
+Sovelluksen hallinta voi itsessään toimia applikaationa tai web-sovelluksena, johon kirjaudutaan tunnuksilla.
 
-Ohjelmalla voidaan mahdollisesti myös simuloida millä nopeudella pelastushenkilöstö pääsee varusteineen mihinkin osaan rakennusta. Voidaan simuloida myös pelastustilanteita erilaisilla skenaarioilla. Tässä dokumentissa pyritään kuitenkin käsittelemään vain sovelluksen perustoiminnallisuus. Todettakoon vain, että jatkokehitykselle on siis mahdollisia visioita.
+Ohjelmalla voidaan mahdollisesti myös simuloida millä nopeudella pelastushenkilöstö pääsee varusteineen
+mihinkin osaan rakennusta.
+Voidaan simuloida myös pelastustilanteita erilaisilla skenaarioilla.
+Tässä dokumentissa pyritään kuitenkin käsittelemään vain sovelluksen perustoiminnallisuus.
+Todettakoon vain, että jatkokehitykselle on siis mahdollisia visioita.
+
+
 2. Käyttötapaukset (mitä sillä voi tehdä)
 
 Järjestelmän avulla voidaan simuloida:
@@ -14,4 +28,20 @@ Järjestelmän avulla voidaan simuloida:
     Onko rakennuksessa joitain ongelmakohtia, joista poistumiseen menee erityisen paljon aikaa
     Onko rakennuksessa kohtia, joissa hälytystä ei ole havaittu tarpeeksi selkeästi tai nopeasti
 
-Järjestelmässä on kahdenlaisia käyttäjiä. Normaalit käyttäjät (kohteet), jotka kirjautuvat järjestelmään rakennukseen tullessaan. Ylläpitäjät kirjautuvat sovellukseen varsinaisia tuloksia varten ja pystyvät käynnistämään tilanteen tallennuksen ja toistamaan tilanteita halutuilta aikaväleiltä. Toiminta muistuttaa turvakameran kuvan seurantaa jälkikäteen.
+Järjestelmässä on kahdenlaisia käyttäjiä.
+Normaalit käyttäjät (kohteet), jotka kirjautuvat järjestelmään rakennukseen tullessaan.
+Ylläpitäjät kirjautuvat sovellukseen varsinaisia tuloksia varten ja pystyvät käynnistämään tilanteen tallennuksen
+ja toistamaan tilanteita halutuilta aikaväleiltä. Toiminta muistuttaa turvakameran kuvan seurantaa jälkikäteen.
+
+Eli...
+- normaalikäyttäjät, jotka tuottavat sovelluksen avulla informaatiota liikkeistään kriisitilanteessa
+- ylläpitäjät, jotka vastaanottavat paikantimen tuottamaa tietoa ja analysoivat sitä pelastusstrategian parantamiseksi
+
+
+3. Vaatimukset
+Sovellus ja palvelin vaativat
+Sovelluksen on toimittava jatkuvasti eikä yhteys rakennuksen langattomaan paikallisverkkoon saa pätkiä.
+Sovelluksen on kyettävä tuottamaan tarkkaa informaatiota laitteen kantajan sijainnista sisätiloissa.
+Sovelluksen yhdystietokannan ja -palvelimen on kyettävä käsittelemään tulevaa informaatiota ja tallentamaan se.
+Sovelluksen on hyvä olla intuitiivinen ja helppokäyttöinen, lähes näkymätön käyttäjälleen.
+Järjestelmä on oltava hallinnassa ylläpitäjälle
