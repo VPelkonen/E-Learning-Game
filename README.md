@@ -40,7 +40,7 @@ Kuvaa yhden (pää)käyttötapauksen kulku vuokaaviona
 <h3>3. Järjestelmäarkkitehtuuri</h3>
 
 - Client
-Järjestelmä voidaan toteuttaa toteuttaa mobiilisovelluksena (Android, iOS, WindowsPhone) tai HTML5-pohjaisena web-palveluna. Client muodostaa pysyvän yhteyden palvelimeen ja lähettää lokaatiodataa koko ajan yhteyden ollessa päällä.
+Järjestelmä voidaan toteuttaa mobiilisovelluksena (Android, iOS, WindowsPhone) tai HTML5-pohjaisena web-palveluna. Client muodostaa pysyvän yhteyden palvelimeen ja lähettää lokaatiodataa koko ajan yhteyden ollessa päällä.
 
 - Palvelin
 Käyttäjät ja ylläpitäjät kirjautuvat palvelimelle tunnistautumista varten. Palvelin ottaa vastaan käyttäjiltä lokaatiodataa silloin kun tallennus on määritetty aktiiviseksi ja tallentaa sen tietokantaan. Palvelimelta luodaan ylläpitäjille raportit kuten Heat Map ja graafit.
@@ -52,10 +52,15 @@ Tietokannassa ovat käyttäjät, mahdollisesti rakennuksen eri tilamäärittelyt
 <h3>4. Vaatimukset (jäljitettävässä, (mitattavassa) muodossa)</h3>
  
 Funktionaaliset vaatimukset
-
+Käyttäjän täytyy pystyä rekisteröitymään ja kirjautumaan palveluun omalla tunnuksellaan. Järjestelmä vaatii kirjautumispalvelun tiedon erittelyä varten. Rekisteröityessä on myös oltava esillä käyttösopimusehdot.
+Paikanninsovelluksen on toimittava moitteettomasti ja yhteys palvelimeen on oltava jatkuva.
+Sovellus on oltava kyllin helppokäyttöinen, jotta kuka tahansa osaa ja pystyy sitä käyttämään, testitilanteessakin.
+Sovelluksen paikannustarkkuus on oltava kyllin suuri, jotta luotettavaa informaatiota voidaan kerätä ja hyödyntää. Sen on toimittava sisätiloissa ja erotettava tilan rakenteet selkeästi.
+Yhteyden katketessa järjestelmävirheen tai vajaan signaalin vuoksi järjestelmä pyrkii luomaan yhteyden uudelleen.
 ...
 
 Ei-funktionaaliset järjestelmävaatimukset
+Käyttäjäsovelluksen on oltava selkeä ja helppokäyttöinen iästä ja kokemuksesta riippumatta.
 
 ...
  
@@ -72,6 +77,10 @@ Millaisia metriikkoja käyttäisit, jotta vaatimukset ovat
 riittävän yksiselitteisiä?
  
 <h3>5. Käyttöliittymä</h3>
+Järjestelmässä on minimalistinen käyttöliittymä.
+Perusnäkymässä on vain keskitetty kirjautumislomake. Käyttäjän kirjautuessa sisään yhteys luodaan ja näkymä muuttuu yksinkertaiseksi tietosivuksi. Ruudulla näkyy yhteyden kesto, vihreä/punainen pallo osoittaen onko yhteys päällä, käyttäjän kirjautumistunnus ja linkki yhteyshistoriaan.
+Yhteyshistorianäkymästä näkyy kulloinenkin kirjautuminen, kuinka kauan käyttäjä on ollut kirjautuneena ja kuinka paljon paikkatietoa lähettänyt palvelimelle.
+Käyttöliittymän saa helposti piiloon ja mobiililaitteen etunäkymälle ilmestyy pieni indikaattori, joka kertoo onko yhteys päällä. Pieni tarvittaessa hiljennettävä äänimerkki osoittaa jos yhteys katkeaa, ja toinen kertoen automaattisen uudelleenyhdistämisen onnistumisesta.
  
 Millaisia näkymiä järjestelmässä on? Miten toiminnallisuuksia niissä 
 on?
