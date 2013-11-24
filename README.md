@@ -52,15 +52,11 @@ Tietokannassa ovat käyttäjät, mahdollisesti rakennuksen eri tilamäärittelyt
 <h3>4. Vaatimukset (jäljitettävässä, (mitattavassa) muodossa)</h3>
  
 Funktionaaliset vaatimukset
-Käyttäjän täytyy pystyä rekisteröitymään ja kirjautumaan palveluun omalla tunnuksellaan. Järjestelmä vaatii kirjautumispalvelun tiedon erittelyä varten. Rekisteröityessä on myös oltava esillä käyttösopimusehdot.
-
-Paikanninsovelluksen on toimittava moitteettomasti ja yhteys palvelimeen on oltava jatkuva.
-
-Sovellus on oltava kyllin helppokäyttöinen, jotta kuka tahansa osaa ja pystyy sitä käyttämään, testitilanteessakin.
-
-Sovelluksen paikannustarkkuus on oltava kyllin suuri, jotta luotettavaa informaatiota voidaan kerätä ja hyödyntää. Sen on toimittava sisätiloissa ja erotettava tilan rakenteet selkeästi.
-
-Yhteyden katketessa järjestelmävirheen tai vajaan signaalin vuoksi järjestelmä pyrkii luomaan yhteyden uudelleen.
+- Käyttäjän täytyy pystyä <b>rekisteröitymään ja kirjautumaan</b> palveluun omalla tunnuksellaan. Järjestelmä vaatii kirjautumispalvelun tiedon erittelyä varten. Rekisteröityessä on myös oltava esillä käyttösopimusehdot.
+- Paikanninsovelluksen on toimittava moitteettomasti ja <b>yhteys palvelimeen on oltava jatkuva</b>.
+- <b>Yhteyden katketessa</b> järjestelmävirheen tai vajaan signaalin vuoksi järjestelmä pyrkii luomaan yhteyden uudelleen.
+- Sovelluksen on oltava kyllin <b>helppokäyttöinen</b>, jotta kuka tahansa osaa ja pystyy sitä käyttämään, testitilanteessakin.
+- Sovelluksen paikannustarkkuus on oltava kyllin suuri, jotta luotettavaa informaatiota voidaan kerätä ja hyödyntää. Sen on toimittava sisätiloissa ja erotettava tilan rakenteet selkeästi.
 ...
 
 Ei-funktionaaliset järjestelmävaatimukset
