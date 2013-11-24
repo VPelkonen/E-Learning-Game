@@ -23,15 +23,34 @@ Järjestelmässä on kahdenlaisia käyttäjiä. Normaalit käyttäjät (kohteet)
 Käyttäjäryhmiä:
 
 - Kohteet (peruskäyttäjät)
-- Pelastushenkilöstö
 - Ylläpitäjät
+- Pelastushenkilöstö
 
 Käyttäjäryhmien määrittely
  
-Kohteet
+<b>Kohteet</b><br/>
+Kohdekäyttäjän tehtävä on toimia suostumuksellaan tiedonvälittäjänä sekä -tuottajana simuloidussa tai oikeassa palo- tai kriisitilanteessa. Käyttäjä kantaa mukanaan laitetta, esimerkiksi älypuhelinta, johon asennettu sovellus kerää kantajansa liikettä paikasta toiseen ja lähettää sen ylläpidon palvelimelle. Käyttäjä myös luo oman tunnuksen järjestelmään ja hyväksyy sen käyttöehdot.
+<br/><br/>
+<b>Ylläpitäjät</b><br/>
+Ylläpito hallinnoi järjestelmää ja varmistaa sen toimivuuden kulloisenkin käyttötilan, esimerkiksi koulurakennuksen, verkossa. Ylläpito ottaa myös vastaan tietokantaan lähetetyn aika- ja paikkatiedon, minkä kulloinenkin käyttäjä on järjestelmän kautta lähettänyt.
+<br/><br/>
+<b>Pelastushenkilöstö</b>
+Pelastuskhenkilöstö voi toimia myös käyttäjinä, käyttäen samanlaista sovellusta omilla tunnuksillaan. Tällöin esimerkiksi paloharjoitustilanteessa saadaan selkeää kuvaa eriteltynä vaarassa olevien ja pelastushenkilöstön välillä. Pelastusammattilaiset keskustelevat ylläpidon kanssa ja prosessoivat käyttäjiltä saatua tietoa saadakseen tarkan kuvan palo- tai muun kriisitilanteen aikana tapahtuneesta ihmisliikkeestä. He tekevät laskelmia vaarallisiin ja hämääviin tiloihin, ohjeisiin tai käyttäytymiseen liittyen ja rakentavat tiedon perusteella parempaa pelastussuunnitelmaa.
  
 Käyttötapauskaavio(t)
- 
+
+1. Kohde kirjautuu sovellukseen ja käynnistää paikannuksen sekä tiedonlähetyksen astuessaan rakennukseen sisään.
+2. Sovellus lähettää reaaliaikaista kuvaa kohteesta ylläpidolle.
+3. Kriisitilanteen tai harjoituksen alkaessa sovellus on edelleen päällä jä lähettää tietoa ylläpidolle, ja sitä kautta pelastusviranomaisille. Myös pelastushenkilöstöllä voi olla yhteys järjestelmään henkilöstön paikannusta varten kullakin aikavälillä.
+4. Tilanne käydään loppuun ja kohde siirtyy valitsemaansa reittiä turvalliseen tilaan.
+5. Tilanne puretaan ja sovellus voidaan halutessa sammuttaa.
+6. Ylläpito tutkii käyttäjien tuottamaa informaatiota ja tekee siitä johtopäätöksiä liittyen rakennuksen, tilanteen tai pelastustoimenpiteiden turvallisuudeen, tehokkuuteen ja riskiluokkiin.
+
+Hätätilanteen epätoivottujen tapaturmien lisäksi ongelmia voi tulla, jos esimerkiksi...
+- <b>Tilan WLAN-verkko ei ole päällä</b>, esimerkiksi sähkökatkoksen, laite- tai järjestelmävaurion vuoksi. Tämä on hyvin mahdollista hätätilanteessa, mutta ongelman ei pitäisi vaikuttaa harjoitustilanteissa.
+- <b>Käyttäjän lähetinlaite katoaa</b>. Käyttäjältä ei saada oikeaa tietoa sijainnista ja liikkeistä. Voidaan pahimmillaan luulla syyttä, että kohde on vaaratilanteessa.
+- <b>Järjestelmässä esiintyy virhe</b>.
+
 Käyttäjäskenaariot (mallipohjaan perustuen: alkutila, normaali 
 eteneminen, lopputila, mikä voi mennä vikaan...)
  
@@ -55,12 +74,16 @@ Funktionaaliset vaatimukset
 - Käyttäjän täytyy pystyä <b>rekisteröitymään ja kirjautumaan</b> palveluun omalla tunnuksellaan. Järjestelmä vaatii kirjautumispalvelun tiedon erittelyä varten. Rekisteröityessä on myös oltava esillä käyttösopimusehdot.
 - Paikanninsovelluksen on toimittava moitteettomasti ja <b>yhteys palvelimeen on oltava jatkuva</b>.
 - <b>Yhteyden katketessa</b> järjestelmävirheen tai vajaan signaalin vuoksi järjestelmä pyrkii luomaan yhteyden uudelleen.
-- Sovelluksen on oltava kyllin <b>helppokäyttöinen</b>, jotta kuka tahansa osaa ja pystyy sitä käyttämään, testitilanteessakin.
-- Sovelluksen paikannustarkkuus on oltava kyllin suuri, jotta luotettavaa informaatiota voidaan kerätä ja hyödyntää. Sen on toimittava sisätiloissa ja erotettava tilan rakenteet selkeästi.
-...
+- Sovelluksen <b>paikannustarkkuus on oltava kyllin suuri</b>, jotta luotettavaa informaatiota voidaan kerätä ja hyödyntää.
+- Paikannuksen on <b>toimittava sisätiloissa</b> ja erotettava tilan rakenteet selkeästi.
+
 
 Ei-funktionaaliset järjestelmävaatimukset
-Käyttäjäsovelluksen on oltava selkeä ja helppokäyttöinen iästä ja kokemuksesta riippumatta.
+- Käyttäjäsovelluksen on oltava <b>selkeä ja helppokäyttöinen</b>, sovelluttava käyttäjälle iästä ja kokemuksesta riippumatta. Oleellisinta on vain kirjautuminen ja yksi nappi, joka käynnistää tai katkaisee paikannuksen sekä tiedonsiirron.
+- 
+
+
+
 
 ...
  
@@ -77,16 +100,18 @@ Millaisia metriikkoja käyttäisit, jotta vaatimukset ovat
 riittävän yksiselitteisiä?
  
 <h3>5. Käyttöliittymä</h3>
-Järjestelmässä on minimalistinen käyttöliittymä.
+Järjestelmässä on minimalistinen käyttöliittymä.<br>
 Perusnäkymässä on vain keskitetty kirjautumislomake. Käyttäjän kirjautuessa sisään yhteys luodaan ja näkymä muuttuu yksinkertaiseksi tietosivuksi. Ruudulla näkyy yhteyden kesto, vihreä/punainen pallo osoittaen onko yhteys päällä, käyttäjän kirjautumistunnus ja linkki yhteyshistoriaan.
 Yhteyshistorianäkymästä näkyy kulloinenkin kirjautuminen, kuinka kauan käyttäjä on ollut kirjautuneena ja kuinka paljon paikkatietoa lähettänyt palvelimelle.
 Käyttöliittymän saa helposti piiloon ja mobiililaitteen etunäkymälle ilmestyy pieni indikaattori, joka kertoo onko yhteys päällä. Pieni tarvittaessa hiljennettävä äänimerkki osoittaa jos yhteys katkeaa, ja toinen kertoen automaattisen uudelleenyhdistämisen onnistumisesta.
  
-Millaisia näkymiä järjestelmässä on? Miten toiminnallisuuksia niissä 
+
+Millaisia näkymiä järjestelmässä on? Mitä toiminnallisuuksia niissä 
 on?
 Kuvaile jokainen näkymä ja mihin sitä käytetään 
 Kuvaile siirtymät käyttöliittymänäkymien välillä
- 
+
+
 6. Projektin hallinta, reflektio
  
 Listatkaa työhön kuluneet tunnit, so. kuinka monta tuntia dokumentin 
