@@ -80,12 +80,7 @@ Funktionaaliset vaatimukset
 
 Ei-funktionaaliset järjestelmävaatimukset
 - Käyttäjäsovelluksen on oltava <b>selkeä ja helppokäyttöinen</b>, sovelluttava käyttäjälle iästä ja kokemuksesta riippumatta. Oleellisinta on vain kirjautuminen ja yksi nappi, joka käynnistää tai katkaisee paikannuksen sekä tiedonsiirron.
-- 
 
-
-
-
-...
  
 pohdittavaa
 * kuinka taata järjestelmän helppokäyttöisyys?
