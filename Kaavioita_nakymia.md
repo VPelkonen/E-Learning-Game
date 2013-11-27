@@ -9,5 +9,5 @@ Alla olevassa linkissä kaavio sovelluksen näkymistä ja niiden sisältämistä
 3. Perus- ja kirjautumisäkymät
 Alla olevissa linkeissä havainnollistavat kuvat perusnäkymästä ja kirjautumisnäkymästä.
 
-http://users.metropolia.fi/~villeep/Ohjelmistotuotanto/perusnakyma.png
-http://users.metropolia.fi/~villeep/Ohjelmistotuotanto/kirjautumisnakyma.png
+![Perusnäkymä](http://users.metropolia.fi/~villeep/Ohjelmistotuotanto/perusnakyma.png)
+![Kirjautumisnäkymä](http://users.metropolia.fi/~villeep/Ohjelmistotuotanto/kirjautumisnakyma.png)
