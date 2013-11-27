@@ -1,10 +1,10 @@
 1. Käyttäjäkaavio
 Alla olevassa linkissä flowchart järjestelmän käyttäjän toiminnasta.
-http://users.metropolia.fi/~villeep/Ohjelmistotuotanto/kayttajakaavio.jpg
+![Käyttäjäkaavio](http://users.metropolia.fi/~villeep/Ohjelmistotuotanto/kayttajakaavio.jpg)
 
 2. Näkymät yleisesti
 Alla olevassa linkissä kaavio sovelluksen näkymistä ja niiden sisältämistä tiedoista.
-http://users.metropolia.fi/~villeep/Ohjelmistotuotanto/nakymat_lyhyesti.png
+![Näkymät yleisesti](http://users.metropolia.fi/~villeep/Ohjelmistotuotanto/nakymat_lyhyesti.png)
 
 3. Perus- ja kirjautumisäkymät
 Alla olevissa linkeissä havainnollistavat kuvat perusnäkymästä ja kirjautumisnäkymästä.
