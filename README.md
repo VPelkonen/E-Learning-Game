@@ -57,13 +57,13 @@ Hätätilanteen epätoivottujen tapaturmien lisäksi ongelmia voi tulla, jos esi
  
 <h3>3. Järjestelmäarkkitehtuuri</h3>
 
-- Client
+- Client:
 Järjestelmä voidaan toteuttaa mobiilisovelluksena (Android, iOS, WindowsPhone) tai HTML5-pohjaisena web-palveluna. Client muodostaa pysyvän yhteyden palvelimeen ja lähettää lokaatiodataa koko ajan yhteyden ollessa päällä.
 
-- Palvelin
+- Palvelin:
 Käyttäjät ja ylläpitäjät kirjautuvat palvelimelle tunnistautumista varten. Palvelin ottaa vastaan käyttäjiltä lokaatiodataa silloin kun tallennus on määritetty aktiiviseksi ja tallentaa sen tietokantaan. Palvelimelta luodaan ylläpitäjille raportit kuten Heat Map ja graafit.
 
-- Tietokanta
+- Tietokanta:
 Tietokannassa ovat käyttäjät, mahdollisesti rakennuksen eri tilamäärittelyt sekä itse lokaatiodata.
 
  
@@ -105,6 +105,7 @@ Alla kaavio sovelluksen näkymistä ja niiden sisältämistä tiedoista.
 
 
 Alla havainnollistavat kuvat perusnäkymästä ja kirjautumisnäkymästä.
+
 ![Perusnäkymä](http://users.metropolia.fi/~villeep/Ohjelmistotuotanto/perusnakyma.png)
 ![Kirjautumisnäkymä](http://users.metropolia.fi/~villeep/Ohjelmistotuotanto/kirjautumisnakyma.png)
 
