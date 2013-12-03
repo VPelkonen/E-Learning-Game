@@ -37,7 +37,7 @@ Ylläpito hallinnoi järjestelmää ja varmistaa sen toimivuuden kulloisenkin k�
 <b>Pelastushenkilöstö</b>
 Pelastuskhenkilöstö voi toimia myös käyttäjinä, käyttäen samanlaista sovellusta omilla tunnuksillaan. Tällöin esimerkiksi paloharjoitustilanteessa saadaan selkeää kuvaa eriteltynä vaarassa olevien ja pelastushenkilöstön välillä. Pelastusammattilaiset keskustelevat ylläpidon kanssa ja prosessoivat käyttäjiltä saatua tietoa saadakseen tarkan kuvan palo- tai muun kriisitilanteen aikana tapahtuneesta ihmisliikkeestä. He tekevät laskelmia vaarallisiin ja hämääviin tiloihin, ohjeisiin tai käyttäytymiseen liittyen ja rakentavat tiedon perusteella parempaa pelastussuunnitelmaa.
  
-Käyttötapauskaavio(t)
+<b>Käyttötapaus: Käytön elinkaari</b>
 
 1. Kohde kirjautuu sovellukseen ja käynnistää paikannuksen sekä tiedonlähetyksen astuessaan rakennukseen sisään.
 2. Sovellus lähettää reaaliaikaista kuvaa kohteesta ylläpidolle.
@@ -51,10 +51,9 @@ Hätätilanteen epätoivottujen tapaturmien lisäksi ongelmia voi tulla, jos esi
 - <b>Käyttäjän lähetinlaite katoaa</b>. Käyttäjältä ei saada oikeaa tietoa sijainnista ja liikkeistä. Voidaan pahimmillaan luulla syyttä, että kohde on vaaratilanteessa.
 - <b>Järjestelmässä esiintyy virhe</b>.
 
-Käyttäjäskenaariot (mallipohjaan perustuen: alkutila, normaali 
-eteneminen, lopputila, mikä voi mennä vikaan...)
- 
-Kuvaa yhden (pää)käyttötapauksen kulku vuokaaviona
+<b>Käyttötapaus: Kirjautuminen ja käyttöönotto kaaviona</b>
+![Käyttäjäkaavio](http://users.metropolia.fi/~villeep/Ohjelmistotuotanto/kayttajakaavio.jpg)
+
  
 <h3>3. Järjestelmäarkkitehtuuri</h3>
 
@@ -99,6 +98,16 @@ Järjestelmässä on minimalistinen käyttöliittymä.<br>
 Perusnäkymässä on vain keskitetty kirjautumislomake. Käyttäjän kirjautuessa sisään yhteys luodaan ja näkymä muuttuu yksinkertaiseksi tietosivuksi. Ruudulla näkyy yhteyden kesto, vihreä/punainen pallo osoittaen onko yhteys päällä, käyttäjän kirjautumistunnus ja linkki yhteyshistoriaan.
 Yhteyshistorianäkymästä näkyy kulloinenkin kirjautuminen, kuinka kauan käyttäjä on ollut kirjautuneena ja kuinka paljon paikkatietoa lähettänyt palvelimelle.
 Käyttöliittymän saa helposti piiloon ja mobiililaitteen etunäkymälle ilmestyy pieni indikaattori, joka kertoo onko yhteys päällä. Pieni tarvittaessa hiljennettävä äänimerkki osoittaa jos yhteys katkeaa, ja toinen kertoen automaattisen uudelleenyhdistämisen onnistumisesta.
+
+<b>Näkymät</b>
+Alla kaavio sovelluksen näkymistä ja niiden sisältämistä tiedoista.
+![Näkymät yleisesti](http://users.metropolia.fi/~villeep/Ohjelmistotuotanto/nakymat_lyhyesti.png)
+
+
+Alla havainnollistavat kuvat perusnäkymästä ja kirjautumisnäkymästä.
+![Perusnäkymä](http://users.metropolia.fi/~villeep/Ohjelmistotuotanto/perusnakyma.png)
+![Kirjautumisnäkymä](http://users.metropolia.fi/~villeep/Ohjelmistotuotanto/kirjautumisnakyma.png)
+
  
 
 Millaisia näkymiä järjestelmässä on? Mitä toiminnallisuuksia niissä 
