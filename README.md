@@ -6,8 +6,8 @@ Heikki Lahtela, Ville Pelkonen
 
 <b>1. Johdanto</b><br>
 <b>2. Käyttötapaukset</b><br>
- 2.1 Käyttäjäryhmien määrittely<br>
- 2.2 Käyttötapaus: Käytön elinkaari<br>
+  2.1 Käyttäjäryhmien määrittely<br>
+  2.2 Käyttötapaus: Käytön elinkaari<br>
 <b>3. </b>
 
 <h3>1. Johdanto</h3>
@@ -42,7 +42,7 @@ Kohdekäyttäjän tehtävä on toimia suostumuksellaan tiedonvälittäjänä sek
 <b>Ylläpitäjät</b><br/>
 Ylläpito hallinnoi järjestelmää ja varmistaa sen toimivuuden kulloisenkin käyttötilan, esimerkiksi koulurakennuksen, verkossa. Ylläpito ottaa myös vastaan tietokantaan lähetetyn aika- ja paikkatiedon, minkä kulloinenkin käyttäjä on järjestelmän kautta lähettänyt.
 <br/><br/>
-<b>Pelastushenkilöstö</b>
+<b>Pelastushenkilöstö</b><br>
 Pelastushenkilöstö voi toimia myös käyttäjinä, käyttäen samanlaista sovellusta omilla tunnuksillaan. Tällöin esimerkiksi paloharjoitustilanteessa saadaan selkeää kuvaa eriteltynä vaarassa olevien ja pelastushenkilöstön välillä. Pelastusammattilaiset keskustelevat ylläpidon kanssa ja prosessoivat käyttäjiltä saatua tietoa saadakseen tarkan kuvan palo- tai muun kriisitilanteen aikana tapahtuneesta ihmisliikkeestä. He tekevät laskelmia vaarallisiin ja hämääviin tiloihin, ohjeisiin tai käyttäytymiseen liittyen ja rakentavat tiedon perusteella parempaa pelastussuunnitelmaa.
  
 <h4>2.2 Käyttötapaus: Käytön elinkaari</h4>
