@@ -75,10 +75,10 @@ Hätätilanteen epätoivottujen tapaturmien lisäksi ongelmia voi tulla, jos esi
 - <b>Client</b><br>
 Järjestelmä voidaan toteuttaa mobiilisovelluksena (Android, iOS, WindowsPhone) tai HTML5-pohjaisena web-palveluna. Client muodostaa pysyvän yhteyden palvelimeen ja lähettää lokaatiodataa koko ajan yhteyden ollessa päällä.
 
-- <b>Palvelin:</b><br>
+- <b>Palvelin</b><br>
 Käyttäjät ja ylläpitäjät kirjautuvat palvelimelle tunnistautumista varten. Palvelin ottaa vastaan käyttäjiltä lokaatiodataa silloin kun tallennus on määritetty aktiiviseksi ja tallentaa sen tietokantaan. Palvelimelta luodaan ylläpitäjille raportit kuten Heat Map ja graafit.
 
-- <b>Tietokanta:</b><br>
+- <b>Tietokanta</b><br>
 Tietokannassa ovat käyttäjät, mahdollisesti rakennuksen eri tilamäärittelyt sekä itse lokaatiodata.
 
  
