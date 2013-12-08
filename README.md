@@ -51,7 +51,7 @@ Hätätilanteen epätoivottujen tapaturmien lisäksi ongelmia voi tulla, jos esi
 - <b>Käyttäjän lähetinlaite katoaa</b>. Käyttäjältä ei saada oikeaa tietoa sijainnista ja liikkeistä. Voidaan pahimmillaan luulla syyttä, että kohde on vaaratilanteessa.
 - <b>Järjestelmässä esiintyy virhe</b>.
 
-<b>Käyttötapaus: Kirjautuminen ja käyttöönotto kaaviona</b>
+<b>Käyttötapaus: Kirjautuminen ja käyttöönotto kaaviona</b><br>
 ![Käyttäjäkaavio](http://users.metropolia.fi/~villeep/Ohjelmistotuotanto/kayttajakaavio.jpg)
 
  
@@ -94,17 +94,19 @@ Millaisia metriikkoja käyttäisit, jotta vaatimukset ovat
 riittävän yksiselitteisiä?
  
 <h3>5. Käyttöliittymä</h3>
-Järjestelmässä on minimalistinen käyttöliittymä.<br>
-Perusnäkymässä on vain keskitetty kirjautumislomake. Käyttäjän kirjautuessa sisään yhteys luodaan ja näkymä muuttuu yksinkertaiseksi tietosivuksi. Ruudulla näkyy yhteyden kesto, vihreä/punainen pallo osoittaen onko yhteys päällä, käyttäjän kirjautumistunnus ja linkki yhteyshistoriaan.
-Yhteyshistorianäkymästä näkyy kulloinenkin kirjautuminen, kuinka kauan käyttäjä on ollut kirjautuneena ja kuinka paljon paikkatietoa lähettänyt palvelimelle.
-Käyttöliittymän saa helposti piiloon ja mobiililaitteen etunäkymälle ilmestyy pieni indikaattori, joka kertoo onko yhteys päällä. Pieni tarvittaessa hiljennettävä äänimerkki osoittaa jos yhteys katkeaa, ja toinen kertoen automaattisen uudelleenyhdistämisen onnistumisesta.
+Järjestelmässä on minimalistinen käyttöliittymä:<br>
+- Perusnäkymässä on vain keskitetty kirjautumislomake. Käyttäjän kirjautuessa sisään yhteys luodaan ja näkymä muuttuu yksinkertaiseksi tietosivuksi.
+- Ruudulla näkyy yhteyden kesto, vihreä/punainen pallo osoittaen onko yhteys päällä, käyttäjän kirjautumistunnus ja linkki yhteyshistoriaan.
+- Yhteyshistorianäkymästä näkyy kulloinenkin kirjautuminen, kuinka kauan käyttäjä on ollut kirjautuneena ja kuinka paljon paikkatietoa lähettänyt palvelimelle.
+- Käyttöliittymän saa helposti piiloon ja mobiililaitteen etunäkymälle ilmestyy pieni indikaattori, joka kertoo onko yhteys päällä.
+- Pieni tarvittaessa hiljennettävä äänimerkki osoittaa jos yhteys katkeaa, ja toinen kertoen automaattisen uudelleenyhdistämisen onnistumisesta.
 
 <b>Näkymät</b>
-Alla kaavio sovelluksen näkymistä ja niiden sisältämistä tiedoista.
+Alla kaavio sovelluksen näkymistä ja niiden sisältämistä tiedoista.<br>
 ![Näkymät yleisesti](http://users.metropolia.fi/~villeep/Ohjelmistotuotanto/nakymat_lyhyesti.png)
 
 
-Alla havainnollistavat kuvat perusnäkymästä ja kirjautumisnäkymästä.
+Alla havainnollistavat kuvat perusnäkymästä ja kirjautumisnäkymästä.<br>
 
 ![Perusnäkymä](http://users.metropolia.fi/~villeep/Ohjelmistotuotanto/perusnakyma.png)
 ![Kirjautumisnäkymä](http://users.metropolia.fi/~villeep/Ohjelmistotuotanto/kirjautumisnakyma.png)
