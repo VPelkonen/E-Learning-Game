@@ -26,7 +26,7 @@ Käyttäjäryhmiä:
 - Ylläpitäjät
 - Pelastushenkilöstö
 
-<h2>2.1 Käyttäjäryhmien määrittely</h2>
+<h3>2.1 Käyttäjäryhmien määrittely</h3>
  
 <b>Kohteet</b><br/>
 Kohdekäyttäjän tehtävä on toimia suostumuksellaan tiedonvälittäjänä sekä -tuottajana simuloidussa tai oikeassa palo- tai kriisitilanteessa. Käyttäjä kantaa mukanaan laitetta, esimerkiksi älypuhelinta, johon asennettu sovellus kerää kantajansa liikettä paikasta toiseen ja lähettää sen ylläpidon palvelimelle. Käyttäjä myös luo oman tunnuksen järjestelmään ja hyväksyy sen käyttöehdot.
@@ -37,7 +37,7 @@ Ylläpito hallinnoi järjestelmää ja varmistaa sen toimivuuden kulloisenkin k�
 <b>Pelastushenkilöstö</b>
 Pelastuskhenkilöstö voi toimia myös käyttäjinä, käyttäen samanlaista sovellusta omilla tunnuksillaan. Tällöin esimerkiksi paloharjoitustilanteessa saadaan selkeää kuvaa eriteltynä vaarassa olevien ja pelastushenkilöstön välillä. Pelastusammattilaiset keskustelevat ylläpidon kanssa ja prosessoivat käyttäjiltä saatua tietoa saadakseen tarkan kuvan palo- tai muun kriisitilanteen aikana tapahtuneesta ihmisliikkeestä. He tekevät laskelmia vaarallisiin ja hämääviin tiloihin, ohjeisiin tai käyttäytymiseen liittyen ja rakentavat tiedon perusteella parempaa pelastussuunnitelmaa.
  
-<h2>2.2 Käyttötapaus: Käytön elinkaari</h2>
+<h3>2.2 Käyttötapaus: Käytön elinkaari</h3>
 
 1. Kohde kirjautuu sovellukseen ja käynnistää paikannuksen sekä tiedonlähetyksen astuessaan rakennukseen sisään.
 2. Sovellus lähettää reaaliaikaista kuvaa kohteesta ylläpidolle.
