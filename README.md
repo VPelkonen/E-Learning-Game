@@ -69,7 +69,7 @@ Tietokannassa ovat käyttäjät, mahdollisesti rakennuksen eri tilamäärittelyt
  
 <h3>4. Vaatimukset</h3>
  
-<b>Funktionaaliset vaatimukset</b>
+<h4>4.1 Funktionaaliset vaatimukset</h4>
 - Käyttäjän täytyy pystyä <b>rekisteröitymään ja kirjautumaan</b> palveluun omalla tunnuksellaan. Järjestelmä vaatii kirjautumispalvelun tiedon erittelyä varten. Rekisteröityessä on myös oltava esillä käyttösopimusehdot.
 - Paikanninsovelluksen on toimittava moitteettomasti ja <b>yhteys palvelimeen on oltava jatkuva</b>.
 - <b>Yhteyden katketessa</b> järjestelmävirheen tai vajaan signaalin vuoksi järjestelmä pyrkii luomaan yhteyden uudelleen.
@@ -77,17 +77,21 @@ Tietokannassa ovat käyttäjät, mahdollisesti rakennuksen eri tilamäärittelyt
 - Paikannuksen on <b>toimittava sisätiloissa</b> ja erotettava tilan rakenteet selkeästi.
 
 
-<b>Ei-funktionaaliset järjestelmävaatimukset</b>
+<h4>4.2 Ei-funktionaaliset järjestelmävaatimukset</h4>
 - Käyttäjäsovelluksen on oltava <b>selkeä ja helppokäyttöinen</b>, sovelluttava käyttäjälle iästä ja kokemuksesta riippumatta. Oleellisinta on vain kirjautuminen ja yksi nappi, joka käynnistää tai katkaisee paikannuksen sekä tiedonsiirron.
 - Järjestelmän helppokäyttöisyys tulee mitata jollain käyttäjätestauksella (Usability testing), joka on standardoitu ja jonka raja-arvot on selkeästi määritetty. Käytettävyyttä voidaan mitata ajallisesti: kuinka kauan käyttäjällä menee aikaa jonkin toiminnon suorittamiseen.
 - Kehitysvaiheessa olisi hyvä saada heti käyttökokemuksia käyttäjäpäiväkirjojen (User diaries) muodossa.
-- Järjestelmän luotettavuuteen vaikuttavia tekijöitä:
-  - Palvelimen käyttöjärjestelmän (Linux) tietoturva
-  - Virhetilanteista toipuminen, kuten jos paikannussovellus ei vastaa niin yritetään yhteyttä uudelleen. Jos yhteys ei muodostu minuutin aikana niin sovellus pysäytetään.
-  - Järjestelmän ylikuormittuessa sovellus pysäytetään.
-- Järjestelmän tehovaatimukset:
-  - Määritellään vaadittu maksimi sovellukseen kirjautunut käyttäjämäärä kerralla, esim. 500 käyttäjää.
-  - Määritellään minimi vasteaika (5 ms) järjestelmälle, jopa maksimi kuormituksen ajalle.
+
+<b>Järjestelmän luotettavuuteen vaikuttavia tekijöitä:</b>
+- Palvelimen käyttöjärjestelmän (Linux) tietoturva
+- Virhetilanteista toipuminen, kuten jos paikannussovellus ei vastaa niin yritetään yhteyttä uudelleen. Jos yhteys ei muodostu minuutin aikana niin sovellus pysäytetään.
+- Järjestelmän ylikuormittuessa sovellus pysäytetään.
+- Määritellään vaadittu palvelun taso (Quality of Service), kuten järjestelmän saatavuus (Uptime) 99,9%.
+
+<b>Järjestelmän tehovaatimukset:</b>
+- Määritellään vaadittu maksimi sovellukseen kirjautunut käyttäjämäärä kerralla, esim. 500 käyttäjää.
+- Määritellään minimi vasteaika (5 ms) järjestelmälle, jopa maksimi kuormituksen ajalle.
+- Määritellään käytössä oleva levytila (100 Gb) tallennuksia varten.
  
 <h3>5. Käyttöliittymä</h3>
 Järjestelmässä on minimalistinen käyttöliittymä:<br>
