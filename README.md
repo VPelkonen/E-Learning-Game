@@ -26,7 +26,7 @@ Käyttäjäryhmiä:
 - Ylläpitäjät
 - Pelastushenkilöstö
 
-Käyttäjäryhmien määrittely
+<h2>2.1 Käyttäjäryhmien määrittely</h2>
  
 <b>Kohteet</b><br/>
 Kohdekäyttäjän tehtävä on toimia suostumuksellaan tiedonvälittäjänä sekä -tuottajana simuloidussa tai oikeassa palo- tai kriisitilanteessa. Käyttäjä kantaa mukanaan laitetta, esimerkiksi älypuhelinta, johon asennettu sovellus kerää kantajansa liikettä paikasta toiseen ja lähettää sen ylläpidon palvelimelle. Käyttäjä myös luo oman tunnuksen järjestelmään ja hyväksyy sen käyttöehdot.
@@ -37,7 +37,7 @@ Ylläpito hallinnoi järjestelmää ja varmistaa sen toimivuuden kulloisenkin k�
 <b>Pelastushenkilöstö</b>
 Pelastuskhenkilöstö voi toimia myös käyttäjinä, käyttäen samanlaista sovellusta omilla tunnuksillaan. Tällöin esimerkiksi paloharjoitustilanteessa saadaan selkeää kuvaa eriteltynä vaarassa olevien ja pelastushenkilöstön välillä. Pelastusammattilaiset keskustelevat ylläpidon kanssa ja prosessoivat käyttäjiltä saatua tietoa saadakseen tarkan kuvan palo- tai muun kriisitilanteen aikana tapahtuneesta ihmisliikkeestä. He tekevät laskelmia vaarallisiin ja hämääviin tiloihin, ohjeisiin tai käyttäytymiseen liittyen ja rakentavat tiedon perusteella parempaa pelastussuunnitelmaa.
  
-<b>Käyttötapaus: Käytön elinkaari</b>
+<h2>2.2 Käyttötapaus: Käytön elinkaari</h2>
 
 1. Kohde kirjautuu sovellukseen ja käynnistää paikannuksen sekä tiedonlähetyksen astuessaan rakennukseen sisään.
 2. Sovellus lähettää reaaliaikaista kuvaa kohteesta ylläpidolle.
@@ -57,19 +57,19 @@ Hätätilanteen epätoivottujen tapaturmien lisäksi ongelmia voi tulla, jos esi
  
 <h3>3. Järjestelmäarkkitehtuuri</h3>
 
-- Client:
+- Client:<br>
 Järjestelmä voidaan toteuttaa mobiilisovelluksena (Android, iOS, WindowsPhone) tai HTML5-pohjaisena web-palveluna. Client muodostaa pysyvän yhteyden palvelimeen ja lähettää lokaatiodataa koko ajan yhteyden ollessa päällä.
 
-- Palvelin:
+- Palvelin:<br>
 Käyttäjät ja ylläpitäjät kirjautuvat palvelimelle tunnistautumista varten. Palvelin ottaa vastaan käyttäjiltä lokaatiodataa silloin kun tallennus on määritetty aktiiviseksi ja tallentaa sen tietokantaan. Palvelimelta luodaan ylläpitäjille raportit kuten Heat Map ja graafit.
 
-- Tietokanta:
+- Tietokanta:<br>
 Tietokannassa ovat käyttäjät, mahdollisesti rakennuksen eri tilamäärittelyt sekä itse lokaatiodata.
 
  
-<h3>4. Vaatimukset (jäljitettävässä, (mitattavassa) muodossa)</h3>
+<h3>4. Vaatimukset</h3>
  
-Funktionaaliset vaatimukset
+<b>Funktionaaliset vaatimukset</b>
 - Käyttäjän täytyy pystyä <b>rekisteröitymään ja kirjautumaan</b> palveluun omalla tunnuksellaan. Järjestelmä vaatii kirjautumispalvelun tiedon erittelyä varten. Rekisteröityessä on myös oltava esillä käyttösopimusehdot.
 - Paikanninsovelluksen on toimittava moitteettomasti ja <b>yhteys palvelimeen on oltava jatkuva</b>.
 - <b>Yhteyden katketessa</b> järjestelmävirheen tai vajaan signaalin vuoksi järjestelmä pyrkii luomaan yhteyden uudelleen.
@@ -77,7 +77,7 @@ Funktionaaliset vaatimukset
 - Paikannuksen on <b>toimittava sisätiloissa</b> ja erotettava tilan rakenteet selkeästi.
 
 
-Ei-funktionaaliset järjestelmävaatimukset
+<b>Ei-funktionaaliset järjestelmävaatimukset</b>
 - Käyttäjäsovelluksen on oltava <b>selkeä ja helppokäyttöinen</b>, sovelluttava käyttäjälle iästä ja kokemuksesta riippumatta. Oleellisinta on vain kirjautuminen ja yksi nappi, joka käynnistää tai katkaisee paikannuksen sekä tiedonsiirron.
 
  
