@@ -80,6 +80,7 @@ Tietokannassa ovat käyttäjät, mahdollisesti rakennuksen eri tilamäärittelyt
 <b>Ei-funktionaaliset järjestelmävaatimukset</b>
 - Käyttäjäsovelluksen on oltava <b>selkeä ja helppokäyttöinen</b>, sovelluttava käyttäjälle iästä ja kokemuksesta riippumatta. Oleellisinta on vain kirjautuminen ja yksi nappi, joka käynnistää tai katkaisee paikannuksen sekä tiedonsiirron.
 
+- Järjestelmän helppokäyttöisyys tulee mitata jollain käyttäjätestauksella, joka on standardoitu ja jonka raja-arvot on selkeästi määritetty. Käytettävyyttä voidaan mitata.
  
 pohdittavaa
 * kuinka taata järjestelmän helppokäyttöisyys?
