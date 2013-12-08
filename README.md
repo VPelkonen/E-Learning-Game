@@ -79,6 +79,7 @@ Tietokannassa ovat käyttäjät, mahdollisesti rakennuksen eri tilamäärittelyt
 
 <b>Ei-funktionaaliset järjestelmävaatimukset</b>
 - Käyttäjäsovelluksen on oltava <b>selkeä ja helppokäyttöinen</b>, sovelluttava käyttäjälle iästä ja kokemuksesta riippumatta. Oleellisinta on vain kirjautuminen ja yksi nappi, joka käynnistää tai katkaisee paikannuksen sekä tiedonsiirron.
+<<<<<<< HEAD
 - Järjestelmän helppokäyttöisyys tulee mitata jollain käyttäjätestauksella (Usability testing), joka on standardoitu ja jonka raja-arvot on selkeästi määritetty. Käytettävyyttä voidaan mitata ajallisesti: kuinka kauan käyttäjällä menee aikaa jonkin toiminnon suorittamiseen.
 - Kehitysvaiheessa olisi hyvä saada heti käyttökokemuksia käyttäjäpäiväkirjojen (User diaries) muodossa.
 - Järjestelmän luotettavuuteen vaikuttavia tekijöitä:
@@ -88,6 +89,7 @@ Tietokannassa ovat käyttäjät, mahdollisesti rakennuksen eri tilamäärittelyt
 - Järjestelmän tehovaatimukset:
 -- Määritellään vaadittu maksimi sovellukseen kirjautunut käyttäjämäärä kerralla, esim. 500 käyttäjää.
 -- Määritellään minimi vasteaika (5 ms) järjestelmälle, jopa maksimi kuormituksen ajalle.
+>>>>>>> branch 'master' of https://github.com/VPelkonen/Pelastustoimen-simulaatiopaikannusjarjestelma
  
 <h3>5. Käyttöliittymä</h3>
 Järjestelmässä on minimalistinen käyttöliittymä:<br>
