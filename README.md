@@ -6,7 +6,7 @@ Heikki Lahtela, Ville Pelkonen
 
 Tämä on konsepti paloturvallisuuden testaukseen tarkoitettua paikkatietoa hyödyntävää sovellusta varten. Sovelluksen avulla voidaan testata reaaliympäristössä palohälytyksen sattuessa ihmisten liikkeitä rakennuksessa ja selvittää mahdolliset ongelmakohdat. Ongelmakohdilla tarkoitetaan paikkoja joissa rakennuksesta poistumiseen käytetään liialti aikaa ja onko jotain paikkoja, joissa hälytykseen ei mahdollisesti osata reagoida.
 
-Sovellus hyödyntää ihmisillä käytössä olevia mobiililaitteita ja niiden paikannusta WLAN verkon avulla. Järjestelmä vaatii toimiakseen kirjautuminen rakennuksen langattomaan verkkoon. Sovellus tallentaa eli "nauhoittaa" ihmisten liikkeet rakennuksessa ja tilannetta voidaan jälkeen päin toistaa halutusta kohdasta. Sovelluksen hallinta voi itsessään toimia applikaationa tai web-sovelluksena, johon kirjaudutaan tunnuksilla.
+Sovellus hyödyntää ihmisillä käytössä olevia mobiililaitteita ja niiden paikannusta WLAN-verkon avulla. Järjestelmä vaatii toimiakseen kirjautuminen rakennuksen langattomaan verkkoon. Sovellus tallentaa eli "nauhoittaa" ihmisten liikkeet rakennuksessa ja tilannetta voidaan jälkeen päin toistaa halutusta kohdasta. Sovelluksen hallinta voi itsessään toimia applikaationa tai web-sovelluksena, johon kirjaudutaan tunnuksilla.
 
 Ohjelmalla voidaan mahdollisesti myös simuloida millä nopeudella pelastushenkilöstö pääsee varusteineen mihinkin osaan rakennusta. Voidaan simuloida myös pelastustilanteita erilaisilla skenaarioilla. Tässä dokumentissa pyritään kuitenkin käsittelemään vain sovelluksen perustoiminnallisuus. Todettakoon vain, että jatkokehitykselle on siis mahdollisia visioita.
  
@@ -18,7 +18,7 @@ Järjestelmän avulla voidaan simuloida:
 - Onko rakennuksessa joitain ongelmakohtia, joista poistumiseen menee erityisen paljon aikaa
 - Onko rakennuksessa kohtia, joissa hälytystä ei ole havaittu tarpeeksi selkeästi tai nopeasti
 
-Järjestelmässä on kahdenlaisia käyttäjiä. Normaalit käyttäjät (kohteet), jotka kirjautuvat järjestelmään rakennukseen tullessaan. Ylläpitäjät kirjautuvat sovellukseen varsinaisia tuloksia varten ja pystyvät käynnistämään tilanteen tallennuksen ja toistamaan tilanteita halutuilta aikaväleiltä. Toiminta muistuttaa turvakameran kuvan seurantaa jälkikäteen.
+Järjestelmässä on kahdenlaisia käyttäjiä. Normaalit käyttäjät (kohteet), jotka kirjautuvat järjestelmään rakennukseen tullessaan. Ylläpitäjät kirjautuvat sovellukseen varsinaisia tuloksia varten ja pystyvät käynnistämään tilanteen tallennuksen ja toistamaan tilanteita halutuilta aikaväleiltä. Toiminta muistuttaa turvakameran kuvan seurantaa jälkikäteen. Periaatteessa pelastushenkilökunta voidaan nähdä myös järjestemäkäyttäjinä sillä data siirtyy myös heidän tutkittavakseen ja henkilöstö voi myös käyttää sovellusta omilla tunnuksillaan mahdollistaen ammattitoiminnan seurannan.
 
 Käyttäjäryhmiä:
 
@@ -57,13 +57,13 @@ Hätätilanteen epätoivottujen tapaturmien lisäksi ongelmia voi tulla, jos esi
  
 <h3>3. Järjestelmäarkkitehtuuri</h3>
 
-- Client:<br>
+- <b>Client</b><br>
 Järjestelmä voidaan toteuttaa mobiilisovelluksena (Android, iOS, WindowsPhone) tai HTML5-pohjaisena web-palveluna. Client muodostaa pysyvän yhteyden palvelimeen ja lähettää lokaatiodataa koko ajan yhteyden ollessa päällä.
 
-- Palvelin:<br>
+- <b>Palvelin:</b><br>
 Käyttäjät ja ylläpitäjät kirjautuvat palvelimelle tunnistautumista varten. Palvelin ottaa vastaan käyttäjiltä lokaatiodataa silloin kun tallennus on määritetty aktiiviseksi ja tallentaa sen tietokantaan. Palvelimelta luodaan ylläpitäjille raportit kuten Heat Map ja graafit.
 
-- Tietokanta:<br>
+- <b>Tietokanta:</b><br>
 Tietokannassa ovat käyttäjät, mahdollisesti rakennuksen eri tilamäärittelyt sekä itse lokaatiodata.
 
  
@@ -107,16 +107,13 @@ Alla havainnollistavat kuvat perusnäkymästä ja kirjautumisnäkymästä.<br>
 ![Perusnäkymä](http://users.metropolia.fi/~villeep/Ohjelmistotuotanto/perusnakyma.png)
 ![Kirjautumisnäkymä](http://users.metropolia.fi/~villeep/Ohjelmistotuotanto/kirjautumisnakyma.png)
 
- 
 
-Millaisia näkymiä järjestelmässä on? Mitä toiminnallisuuksia niissä 
-on?
-Kuvaile jokainen näkymä ja mihin sitä käytetään 
-Kuvaile siirtymät käyttöliittymänäkymien välillä
+<h3>6. Projektin hallinta, reflektio</h3>
+Aikaa dokumentin ideointiin, rakentamiseen ja kirjoittamiseen meni noin <b>kaksi työpäivää</b> henkilöä kohden. Aika- ja työmäärän arviointi oli hankalaa sillä kumpikaan meistä ei ole aiemmin tehnyt vaatimusmäärittelyä. Dokumentista itsessän tuli mielestämme melko selkeä, muttei äärimmäisen yksityiskohtainen, mikä selittyy osittain järjestelmän tarkoituksen ja rakenteen vuoksi.<br><br>
+Emme ole syventyneet itse käyttöön niin paljoa kuin sovelluksen rakentamiseen ja ideointiin. Kaiken kaikkiaan tässä pitäisi olla selkeä ja yksiselitteinen pohja, jonka mukaan valmistaa pelastustoimen simulaatio- ja paikannusjärjestelmä viranomais- tai yksityiseen käyttöön.<br><br>
+Tulevissa projekteissa vaatimusmäärittelyn tekeminen on tärkeää ja käytäntö tulee varmasti ainakin jossain määrin käyttöön, oli kyseessä sitten tapahtuman, sovelluksen tai minkä tahansa suunnittelu. Mitä, kuka, missä, miksi, miten... Näitä tärkeitä kysymyksiä on hyvä reflektoida ennen varsinaisen tuotteen loppuunrakentamista ja tarvittaessa on oltava ketterä, jos kyseessä ei ole tiukka asiakkaan ja tarjoajan välinen erimielisyys. Todellisuudessa vastaavaa vaatimusmäärittelyä tuskin tulee tehtyä pienempiin projekteihin, mutta suuremmissa hankkeissa dokmentointi ja projektin määrittely ovat avainasemassa, etenkin kun projektityöryhmä on suuri. Tällöin kaikilla on yksi yhteinen lähde, jonka mukaan perustaa omat ratkaisunsa ja kaikki pysyvät varmasti samalla tiellä työskennellen yhteistä tavoitetta kohti.<br><br>
+<b>Vaikeinta dokumentin kirjoittamisessa</b> oli ehkä aiheen rajaaminen. Mitä kuuluu tämän vaatimusmäärittelyn piiriin? Mitkä eivät kuulu meidän vaikutus- ja vastuuvaltamme alle? Esimerkiksi kysymykset käyttöliittymän grafiikasta, metriikoista ja käyttötapauksista. Kaikista näistä on esitetty esimerkkejä dokumentissa, mutta ...
 
-
-6. Projektin hallinta, reflektio
- 
 Listatkaa työhön kuluneet tunnit, so. kuinka monta tuntia dokumentin 
 kirjoittamiseen meni aikaa per henkilö.
 Kuinka vaikeaa oli arvioida työmäärää, kuinka paljon lopullinen 
